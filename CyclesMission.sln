@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CyclesMission", "CyclesMission.vcxproj", "{3D475452-33CA-75DB-9195-B5DF19727E90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Debug|x64.ActiveCfg = Debug|x64
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Debug|x64.Build.0 = Debug|x64
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Debug|x86.ActiveCfg = Debug|Win32
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Debug|x86.Build.0 = Debug|Win32
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Release|x64.ActiveCfg = Release|x64
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Release|x64.Build.0 = Release|x64
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Release|x86.ActiveCfg = Release|Win32
+		{3D475452-33CA-75DB-9195-B5DF19727E90}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A1D9652-C5DA-413E-9A83-47550EED20B9}
+	EndGlobalSection
+EndGlobal
