@@ -44,13 +44,13 @@ namespace CyclesMission {
 	private: System::Windows::Forms::ListBox^ listBox1;
 	private: System::Windows::Forms::RichTextBox^ richTextBox2;
 	private: System::Windows::Forms::Label^ label4;
-	private: System::Windows::Forms::TextBox^ textBox1;
+
 	private: System::Windows::Forms::RichTextBox^ richTextBox3;
 	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::TextBox^ textBox2;
+
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::TextBox^ textBox3;
+
 	public:
 
 
@@ -123,23 +123,20 @@ namespace CyclesMission {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->richTextBox2 = (gcnew System::Windows::Forms::RichTextBox());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->richTextBox3 = (gcnew System::Windows::Forms::RichTextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->progressBar1 = (gcnew System::Windows::Forms::ProgressBar());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -162,7 +159,7 @@ namespace CyclesMission {
 			this->tabControl1->Location = System::Drawing::Point(3, 124);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(724, 387);
+			this->tabControl1->Size = System::Drawing::Size(823, 387);
 			this->tabControl1->TabIndex = 0;
 			this->tabControl1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::tabControl1_SelectedIndexChanged);
 			// 
@@ -176,14 +173,14 @@ namespace CyclesMission {
 			this->tabPage1->Location = System::Drawing::Point(4, 25);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(716, 358);
+			this->tabPage1->Size = System::Drawing::Size(815, 358);
 			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"tabPage1";
+			this->tabPage1->Text = L"Mission 1";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(219, 80);
+			this->richTextBox1->Location = System::Drawing::Point(286, 77);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->Size = System::Drawing::Size(189, 125);
 			this->richTextBox1->TabIndex = 5;
@@ -194,35 +191,32 @@ namespace CyclesMission {
 			this->label3->AutoSize = true;
 			this->label3->Location = System::Drawing::Point(522, 105);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(44, 16);
+			this->label3->Size = System::Drawing::Size(0, 16);
 			this->label3->TabIndex = 4;
-			this->label3->Text = L"label3";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
 			this->label2->Location = System::Drawing::Point(522, 172);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(44, 16);
+			this->label2->Size = System::Drawing::Size(0, 16);
 			this->label2->TabIndex = 3;
-			this->label2->Text = L"label2";
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
 			this->label1->Location = System::Drawing::Point(522, 43);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(44, 16);
+			this->label1->Size = System::Drawing::Size(0, 16);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"label1";
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(273, 291);
+			this->button1->Location = System::Drawing::Point(330, 275);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(114, 23);
 			this->button1->TabIndex = 1;
-			this->button1->Text = L"button1";
+			this->button1->Text = L"Обчислити";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -233,63 +227,54 @@ namespace CyclesMission {
 			this->tabPage2->Location = System::Drawing::Point(4, 25);
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(716, 358);
+			this->tabPage2->Size = System::Drawing::Size(815, 358);
 			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"tabPage2";
+			this->tabPage2->Text = L"Mission 2";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// listBox1
 			// 
 			this->listBox1->FormattingEnabled = true;
 			this->listBox1->ItemHeight = 16;
-			this->listBox1->Location = System::Drawing::Point(259, 81);
+			this->listBox1->Location = System::Drawing::Point(274, 35);
 			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(144, 116);
+			this->listBox1->Size = System::Drawing::Size(293, 260);
 			this->listBox1->TabIndex = 3;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(283, 263);
+			this->button2->Location = System::Drawing::Point(319, 301);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->Size = System::Drawing::Size(210, 23);
 			this->button2->TabIndex = 2;
-			this->button2->Text = L"button2";
+			this->button2->Text = L"Обчислити";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// tabPage3
 			// 
 			this->tabPage3->Controls->Add(this->label4);
-			this->tabPage3->Controls->Add(this->textBox1);
 			this->tabPage3->Controls->Add(this->richTextBox2);
 			this->tabPage3->Controls->Add(this->button3);
 			this->tabPage3->Location = System::Drawing::Point(4, 25);
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(716, 358);
+			this->tabPage3->Size = System::Drawing::Size(815, 358);
 			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"tabPage3";
+			this->tabPage3->Text = L"Mission 3";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(485, 180);
+			this->label4->Location = System::Drawing::Point(522, 124);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(44, 16);
+			this->label4->Size = System::Drawing::Size(0, 16);
 			this->label4->TabIndex = 5;
-			this->label4->Text = L"label4";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(458, 74);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(100, 22);
-			this->textBox1->TabIndex = 4;
 			// 
 			// richTextBox2
 			// 
-			this->richTextBox2->Location = System::Drawing::Point(167, 36);
+			this->richTextBox2->Location = System::Drawing::Point(282, 38);
 			this->richTextBox2->Name = L"richTextBox2";
 			this->richTextBox2->Size = System::Drawing::Size(193, 210);
 			this->richTextBox2->TabIndex = 3;
@@ -297,26 +282,25 @@ namespace CyclesMission {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(223, 295);
+			this->button3->Location = System::Drawing::Point(319, 267);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(75, 23);
+			this->button3->Size = System::Drawing::Size(117, 23);
 			this->button3->TabIndex = 2;
-			this->button3->Text = L"button3";
+			this->button3->Text = L"Обчислити";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// tabPage4
 			// 
 			this->tabPage4->Controls->Add(this->label5);
-			this->tabPage4->Controls->Add(this->textBox2);
 			this->tabPage4->Controls->Add(this->richTextBox3);
 			this->tabPage4->Controls->Add(this->button4);
 			this->tabPage4->Location = System::Drawing::Point(4, 25);
 			this->tabPage4->Name = L"tabPage4";
 			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage4->Size = System::Drawing::Size(716, 358);
+			this->tabPage4->Size = System::Drawing::Size(815, 358);
 			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"tabPage4";
+			this->tabPage4->Text = L"Mission 4";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// label5
@@ -324,20 +308,12 @@ namespace CyclesMission {
 			this->label5->AutoSize = true;
 			this->label5->Location = System::Drawing::Point(537, 154);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(44, 16);
+			this->label5->Size = System::Drawing::Size(0, 16);
 			this->label5->TabIndex = 5;
-			this->label5->Text = L"label5";
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(67, 70);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(105, 22);
-			this->textBox2->TabIndex = 4;
 			// 
 			// richTextBox3
 			// 
-			this->richTextBox3->Location = System::Drawing::Point(238, 52);
+			this->richTextBox3->Location = System::Drawing::Point(298, 52);
 			this->richTextBox3->Name = L"richTextBox3";
 			this->richTextBox3->Size = System::Drawing::Size(177, 162);
 			this->richTextBox3->TabIndex = 3;
@@ -345,11 +321,11 @@ namespace CyclesMission {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(288, 287);
+			this->button4->Location = System::Drawing::Point(322, 250);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(75, 23);
+			this->button4->Size = System::Drawing::Size(127, 23);
 			this->button4->TabIndex = 2;
-			this->button4->Text = L"button4";
+			this->button4->Text = L"Обчислити";
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
@@ -357,23 +333,39 @@ namespace CyclesMission {
 			// 
 			this->tabPage5->Controls->Add(this->label7);
 			this->tabPage5->Controls->Add(this->label6);
-			this->tabPage5->Controls->Add(this->textBox3);
 			this->tabPage5->Controls->Add(this->button5);
 			this->tabPage5->Location = System::Drawing::Point(4, 25);
 			this->tabPage5->Name = L"tabPage5";
 			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage5->Size = System::Drawing::Size(716, 358);
+			this->tabPage5->Size = System::Drawing::Size(815, 358);
 			this->tabPage5->TabIndex = 4;
-			this->tabPage5->Text = L"tabPage5";
+			this->tabPage5->Text = L"Mission 5";
 			this->tabPage5->UseVisualStyleBackColor = true;
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(482, 188);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(0, 16);
+			this->label7->TabIndex = 5;
+			this->label7->Click += gcnew System::EventHandler(this, &MyForm::label7_Click);
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(482, 123);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(0, 16);
+			this->label6->TabIndex = 4;
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(291, 304);
+			this->button5->Location = System::Drawing::Point(311, 271);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->Size = System::Drawing::Size(146, 23);
 			this->button5->TabIndex = 2;
-			this->button5->Text = L"button5";
+			this->button5->Text = L"Обчислити";
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
@@ -391,7 +383,7 @@ namespace CyclesMission {
 			this->tableLayoutPanel1->RowCount = 2;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 23.54086F)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 76.45914F)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(730, 514);
+			this->tableLayoutPanel1->Size = System::Drawing::Size(829, 514);
 			this->tableLayoutPanel1->TabIndex = 1;
 			// 
 			// panel1
@@ -402,7 +394,7 @@ namespace CyclesMission {
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel1->Location = System::Drawing::Point(3, 3);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(724, 115);
+			this->panel1->Size = System::Drawing::Size(823, 115);
 			this->panel1->TabIndex = 1;
 			// 
 			// pictureBox1
@@ -422,36 +414,11 @@ namespace CyclesMission {
 			this->progressBar1->Size = System::Drawing::Size(453, 34);
 			this->progressBar1->TabIndex = 2;
 			// 
-			// textBox3
-			// 
-			this->textBox3->Location = System::Drawing::Point(165, 85);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(100, 22);
-			this->textBox3->TabIndex = 3;
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(432, 121);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(44, 16);
-			this->label6->TabIndex = 4;
-			this->label6->Text = L"label6";
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(431, 188);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(44, 16);
-			this->label7->TabIndex = 5;
-			this->label7->Text = L"label7";
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(730, 514);
+			this->ClientSize = System::Drawing::Size(829, 514);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
@@ -483,18 +450,18 @@ namespace CyclesMission {
    // Ввести 12 дійсних чисел та визначити
    // кількість додатних і від’ємних.
 
-		int p = ___, n = ___;
+		int p = 0, n = 0;
 		double a;
 
-		for (int i = ___; i <= ___; i++)
+		for (int i = 1; i <= 12; i++)
 		{
-			a = Convert::ToDouble(textBox3->___);
+			a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("Введіть " + i + "-е число", " Введіть число", " ", 10, 10));
 
-			if (a ___ 0)
-				p ___;
+			if (a > 0)
+				p ++;
 
-			if (a ___ 0)
-				n ___;
+			if (a < 0)
+				n ++;
 		}
 
 		label6->Text = "Додатних = " + Convert::ToString(p);
@@ -515,26 +482,28 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	// Ввід закінчується числом 0.
 
 	int a;
-	int k = ___;
-
+	int k = 0;
+	int i = 1;
 	richTextBox3->Clear();
 
 	while (true)
 	{
 	a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("Введіть " + i + "-е число", " Введіть число", " ", 10, 10));
 
-		if (a == ___)
+		if (a == 0)
 			break;
 
 		richTextBox3->AppendText(Convert::ToString(a) + "\n");
 
-		if (a ___ 100 && a ___ 999)
+		if (a >= 100 && a <= 999)
 		{
-			k ___;
+			k ++;
 		}
+
+		i++;
 	}
 
-	label5->Text = "Кількість трьохзначних = " + Convert::ToString(___);
+	label5->Text = "Кількість трьохзначних = " + Convert::ToString(k);
 
 
 
@@ -548,24 +517,23 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
    // Ввести 11 цілих чисел та обчислити суму тільки двоцифрових.
 
 	int a;
-	int s = ___;
+	int s = 0;
 
-	richTextBox2->Clear();
 
-	for (int i = ___; i <= ___; i++)
+	for (int i = 1; i <= 11; i++)
 	{
 		a = Convert::ToInt32(Microsoft::VisualBasic::Interaction::InputBox("Введіть " + i + "-е число", " Введіть число", " ", 10, 10));
 
 richTextBox2->AppendText(a + "\n");
 
 		// перевірка на двоцифрове число
-		if (a ___ 10 && a ___ 99)
+if (a >= 10 && a <= 99)
 		{
-			s ___ a;
+			s += a;
 		}
 	}
 
-	label4->Text = "Сума двоцифрових = " + Convert::ToString(___);
+	label4->Text = "Сума двоцифрових = " + Convert::ToString(s);
 
 
 
@@ -580,22 +548,22 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	// Табулювати функцію y = x^2
 	// на проміжку [-5;5] з кроком 0.5
 
-	double a = ___;
-	double b = ___;
-	double h = ___;
+	double a = -5;
+	double b = 5;
+	double h = 0.5;
 	double y;
 
 	listBox1->Items->Add("x\t|\ty");
 
-	double x = ___;
+	double x = a;
 
-	while (x ___ b)
+	while (x <= b)
 	{
-		y = pow(x, ___);
+		y = x*x;
 
 		listBox1->Items->Add(x.ToString("0.0") + "\t|\t" + y.ToString("0.00"));
 
-		x ___ h;
+		x += h;
 	}
 
 
@@ -614,33 +582,33 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	// 3) Знайти кількість від’ємних серед 10 випадкових чисел [-10;10]
 
 	int i;
-	int s = ___;   // сума
-	int d = ___;   // добуток
-	int k = ___;   // кількість від’ємних
+	int s = 0;   // сума
+	int d = 1;   // добуток
+	int k = 0;   // кількість від’ємних
 	int a;
 
 	srand(time(0));
 
-	for (i = ___; i <= ___; i++)
+	for (i = 1; i <= 10; i++)
 	{
 		// сума чисел
-		s ___ i;
+		s = s + i;
 
 		// перевірка на парність
-		if (i ___ 2 == 0)
+		if (i % 2 == 0)
 		{
-			d ___ i;
+			d = d * i;
 		}
 
 		// випадкове число
-		a = rand() % ___ - ___;
+		a = rand() % 21 - 10;
 
 		richTextBox1->AppendText(Convert::ToString(a) + "\n");
 
 		// перевірка на від’ємне число
-		if (a ___ 0)
+		if (a < 0)
 		{
-			k ___;
+			k ++;
 		}
 	}
 
@@ -666,6 +634,12 @@ private: System::Void tabControl1_SelectedIndexChanged(System::Object^ sender, S
 	case 4: pictureBox1->Image = Image::FromFile("5.png"); break;
 	default: pictureBox1->Image = nullptr; break;
 	}
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
